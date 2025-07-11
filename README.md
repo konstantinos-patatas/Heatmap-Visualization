@@ -27,8 +27,6 @@ The application reads a data file containing **latitude**, **longitude**, and **
 
 ---
 
----
-
 ## ⚠️ Common Issues & Fixes
 
 Here are some potential problems you might encounter when running the application, along with solutions:
@@ -57,5 +55,13 @@ If you want to use your own `.csv` file and the app crashes or renders incorrect
 
 **Fix:**  
 Make sure your file follows the correct structure. Each line should contain:
+- **Column 1:** Latitude (as a decimal number)
+- **Column 2:** Longitude (as a decimal number)
+- **Column 3:** Temperature (in °F)
+
+> ✅ Tip: Ensure there are no empty lines or extra columns in the file.
+
+---
+
 
 
