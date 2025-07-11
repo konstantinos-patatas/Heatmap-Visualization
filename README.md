@@ -27,3 +27,35 @@ The application reads a data file containing **latitude**, **longitude**, and **
 
 ---
 
+---
+
+## ⚠️ Common Issues & Fixes
+
+Here are some potential problems you might encounter when running the application, along with solutions:
+
+### 1️⃣ File Not Found Error
+
+**Problem:**  
+You may see an error like `FileNotFoundException` when the application tries to read the temperature data file.
+
+**Fix:**  
+- Open `TemperatureApp.java`
+- Locate the line where the `TemperatureData` object is initialized (e.g., `new TemperatureData("heatmap.csv")`)
+- Ensure the file path is correct
+  - If the file is in the root directory of your project, use `"heatmap.csv"`
+  - Otherwise, provide the **full absolute path** or correct **relative path**
+- You can also **copy the full path** from your file system or project properties and paste it into the code.
+
+> ✅ Tip: If you're using an IDE like IntelliJ or Eclipse, right-click the file > *Copy Path* to avoid typos.
+
+---
+
+### 2️⃣ Using a Custom Data File
+
+**Problem:**  
+If you want to use your own `.csv` file and the app crashes or renders incorrectly, the file format may be invalid.
+
+**Fix:**  
+Make sure your file follows the correct structure. Each line should contain:
+
+
